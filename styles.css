@@ -1,0 +1,33 @@
+body{
+    margin: 0.1rem;
+    padding: 0;
+    background-color: lightslategray;
+}
+.title{
+    display: flex;
+    width: 600px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    
+}
+.title_top{
+    color: cyan;
+    width: 70px;
+}
+#click_it{
+    background-color: #4CAF50;
+    color: azure;
+    border: none;
+    border-radius: 5px;
+}
+#click_it:hover{
+    background-color:chartreuse;
+    cursor: pointer;
+}
+.title_content{
+    color:chartreuse;
+    font-weight: 500;
+    padding: 0 20px;
+}

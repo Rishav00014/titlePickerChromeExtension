@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Title Picker",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "permissions":["tabs"],
+  "action": {
+    "default_popup": "pick.html",
+    "default_icon": "logo.png"
+  }
+}
