@@ -2,19 +2,26 @@ body{
     margin: 0.1rem;
     padding: 0;
     background-color: lightslategray;
+    width: 500px;
 }
+.discription{
+    font-size: 1rem;
+    color: cyan;
+    text-align: center;
+    margin: 20px 0;
+}
+
 .title{
     display: flex;
-    width: 600px;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     font-size: 1rem;
-    
+    margin: 10px;
 }
 .title_top{
     color: cyan;
-    width: 70px;
+    text-align: center;
 }
 #click_it{
     background-color: #4CAF50;
@@ -26,8 +33,20 @@ body{
     background-color:chartreuse;
     cursor: pointer;
 }
+#input_arr{
+    width: 80%;
+    margin: 5px;
+}
 .title_content{
+    display: flex;
+    flex-direction: row;
     color:chartreuse;
     font-weight: 500;
     padding: 0 20px;
+    text-align: center;
+}
+
+
+.hidden{
+    display: none;
 }
