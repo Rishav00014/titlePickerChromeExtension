@@ -61,4 +61,4 @@ const scan = () =>{
     });
 }
 
-scan();
+scan()

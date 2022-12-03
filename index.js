@@ -5,11 +5,11 @@ const isGivenWebsite= async (ele)=>{
     return tab.url.includes(ele);
 }
 
-const mes = (data)=>{
+const mes =async (data)=>{
     let queryOptions = { active: true, lastFocusedWindow: true };
-    chrome.tabs.query(queryOptions,(tab)=>{
-        chrome.tabs.sendMessage(tab[0].id, data, (response)=>{
-            console.log(response);
+    chrome.tabs.query(queryOptions,async (tab)=>{
+        chrome.tabs.sendMessage(tab[0].id, data,async (response)=>{
+            console.log(await response);
         });    
     });
 }
@@ -23,7 +23,7 @@ window.addEventListener("load",async ()=>{
         document.querySelector('.title').classList.remove('hidden');
     };
 
-    document.getElementById("click_it").addEventListener("click",()=>{
+    document.getElementById("click_it").addEventListener("click",async ()=>{
         var like = parseInt(document.getElementById("like").value)
         var comment = parseInt(document.getElementById("comment").value)
         var data = {
@@ -31,6 +31,6 @@ window.addEventListener("load",async ()=>{
             comment: comment 
         }
         
-        mes(data);
+        await mes(data);
     })    
 })
