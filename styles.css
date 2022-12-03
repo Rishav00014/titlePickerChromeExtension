@@ -28,6 +28,7 @@ body{
     color: azure;
     border: none;
     border-radius: 5px;
+    padding: 5px;
 }
 #click_it:hover{
     background-color:chartreuse;
@@ -39,11 +40,10 @@ body{
 }
 .title_content{
     display: flex;
-    flex-direction: row;
-    color:chartreuse;
+    width: 70%;
+    justify-content: space-between;
     font-weight: 500;
-    padding: 0 20px;
-    text-align: center;
+    padding: 5px;
 }
 
 

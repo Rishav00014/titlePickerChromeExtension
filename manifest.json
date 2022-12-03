@@ -1,12 +1,12 @@
 {
   "manifest_version": 3,
   "name": "Title Picker",
-  "description": "Linkedin bot",
-  "version": "2.0",
+  "description": "Auto reacter and commenter",
+  "version": "3.0",
   "permissions":["tabs","activeTab","nativeMessaging"],
   "content_scripts": [
     {
-      "matches": ["https://www.linkedin.com/in/*"],
+      "matches": ["https://www.linkedin.com/feed/"],
       "js": ["content-script.js"]
     }
   ],
